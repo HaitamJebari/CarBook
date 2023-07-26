@@ -3767,6 +3767,10 @@ input[type="button"].btn-block {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+      
+        
+     
+    
 .card {
   position: relative;
   display: -webkit-box;
@@ -8475,7 +8479,10 @@ h1, h2, h3, h4, h5,
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      border: 1px solid red; }
+      border: 1px solid red;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+}
       .request-form .form-group .icon span {
         color: rgba(0, 0, 0, 0.3) !important; }
     .request-form .form-group .select-wrap, .request-form .form-group .input-wrap {
@@ -9146,7 +9153,8 @@ textarea.form-control {
 
 .ftco-section {
   padding: 6em 0;
-  position: relative; }
+  position: relative;
+ }
   @media (max-width: 767.98px) {
     .ftco-section {
       padding: 6em 0; } }
@@ -9308,7 +9316,7 @@ textarea.form-control {
     }
   }
   .but{
-     margin-left: 14em;
+     margin-left: 26em;
   }
   @media (max-width: 767.98px) {
     .but{
@@ -9331,7 +9339,8 @@ textarea.form-control {
         height: 30em;
         width: 50em;
         margin-top: 10em;
-        margin-left: 9em;
+        margin-left: 10em;
+        
         z-index: 1;
       } 
     }
