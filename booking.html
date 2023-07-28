@@ -22,8 +22,8 @@
 
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
 
@@ -54,84 +54,73 @@
 	  </nav>
     <!-- END nav -->
     <div className='form'>
-        <div className='faire'>
+        <div className='faireT'>
           <h4>Make Your <em>Reservation</em> By This  <em>form</em></h4>
         </div>
-      
-        <form>
-          <div className='row'>
-            <div className='col-lg-6'>
-              <fieldset>
-                <label htmlFor="provenance">Origin </label>
-                <select className='inputR'>
-                  <option selected="selected"></option>
-                  <option>Tanger</option>
-                </select>
-              </fieldset>
+      <form action="" method="post">
+        <div class="row forRow">
+            <div class="col-6">
+               <label>First Name</label>  <input id="first_name" type="text" class="search-input" name="first_name" required autofocus>
             </div>
-      
-            <div className='col-lg-6'>
-              <fieldset>
-                <label htmlFor="arrivee">Destinataire</label>
-                <select className='inputR'>
-                  <option selected="selected"></option>
-                  <option>Paris</option>
-                  <option>Berne</option>
-                  <option>Dortmund</option>
-                </select>
-              </fieldset>
+            <div class="col-6">
+                <label>Last Name </label> <input id="first_name" type="text" class="search-input" name="first_name" required autofocus>
             </div>
-            <div className='col-lg-6'>
-              <label htmlFor="depart">Date de départ</label>
-              <input type="date" id="depart" />
+        </div>
+    
+        <div class="row forRow">
+            <div class="col-6">
+                <label>Email</label>  <input id="email" type="email" class="search-input" name="email" required>
             </div>
-            <div className='col-lg-6'>
-              <label htmlFor="retour">Date de Retour</label>
-              <input type="date" id="retour"  />
+            <div class="col-6">
+                <label>Phone Number</label>  <input id="phone" type="tel" class="search-input" name="phone" required>
             </div>
-      
-            <div className='col-lg-6'>
-              <label htmlFor="adultes">Nombre d'adultes</label>
-              <select id="adultes" >
-                <option selected="selected">Selectionner Votre Choix</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+        </div>
+        <div class="row forRow">
+            <div class="col-6">
+                <label>Address</label> <input id="address" type="text" class="search-input" name="address" required>
             </div>
-            <div className='col-lg-6'>
-              <label htmlFor="enfants">Nombre d'enfants</label>
-              <select id="enfants" value={Enfants} >
-                <option selected="selected">Selectionner Votre Choix</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+            <div class="col-6">
+                <label>City</label> <input id="city" type="text" class="search-input" name="city" required>
             </div>
-            <div className='col-lg-12'>
-              <label htmlFor="type">Email :</label>
-              <input type='email' />
+        </div>
+        <div class="row forRow">
+            <div class="col-6">
+                <label>State</label> <input id="state" type="text" class="search-input" name="state" required>
+
             </div>
-            <div className='col-lg-12'>
-              <label htmlFor="type">Categorie</label>
-              <select id="type" value={Categorie} >
-                <option selected="selected">Selectionner Votre Choix</option>
-                <option>Classe Economique</option>
-                <option>Classe VIP</option>
-              </select>
+            <div class="col-6">
+                <label>Zip Code</label>  <input id="zip_code" type="text" class="search-input" name="zip_code" required>
             </div>
-            <div className='col-lg-12 ms-12'>
-              <div className="button-submit">
-                <button type='button' id="recherche"><span>Reserve</span></button>
-              </div>
+        </div>
+        <div class="row forRow">
+            <div class="col-md-12 col-lg-12">
+            <label>Driving License Number</label> <input id="driving_license_number" type="text" class="search-input" name="driving_license_number" required>
             </div>
+        </div>
+        <div class="row forRow">
+            <div class="col-md-6 col-lg-6">
+            <label>Rental Start Date</label> <input id="rental_start_date" type="date" class="search-input" name="rental_start_date" required>
             </div>
-          </form>
+            <div class="col-md-6 col-lg-6">
+            <label>Rental End Date</label> <input id="rental_end_date" type="date" class="search-input" name="rental_end_date" required>
+            </div>
+        </div>
+        <div class="row forRow">
+            <div class="col">
+            <label>Car</label> 
+            <select name="" id="">
+                <option value="">Car1</option>
+                <option value="">Car2</option>
+                <option value="">Car3</option>
+            </select>
+        </div>
+        </div>
+        <div class="row forRow">
+            <div class="col-md-12">
+                <button class="butBook" type="submit" class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+      </form>
         </div>
 </body>
 </html>

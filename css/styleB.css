@@ -425,15 +425,96 @@
       h4 {
         font-size: 30px;
         text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: -1em;
       }
      
       h4 em {
         font-style: normal;
         color: #22b3c1;
       }
+      /* .formR{
+        margin-left: -15em;
+      } */
+      /* .search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+      }
+      label{
+        color: black;
+      }
+      .search__input {
+        font-family: inherit;
+        font-size: inherit;
+        background-color: #f4f2f2;
+        border: none;
+        color: #646464;
+        padding: 0.7rem 1rem;
+        border-radius: 30px;
+        width: 12em;
+        transition: all ease-in-out .5s;
+        margin-right: -2rem;
+      }
       
+      .search__input:hover, .search__input:focus {
+        box-shadow: 0 0 1em #00000013;
+      }
       
+      .search__input:focus {
+        outline: none;
+        background-color: #f0eeee;
+      }
       
+      .search__input::-webkit-input-placeholder {
+        font-weight: 100;
+        color: #ccc;
+      }
+      
+      .search__input:focus + .search__button {
+        background-color: #f0eeee;
+      }
+      
+      .search__button {
+        border: none;
+        background-color: #f4f2f2;
+        margin-top: .1em;
+      }
+      
+      .search__button:hover {
+        cursor: pointer;
+      } */
+      /* .part{
+        margin-top: -2em;
+      }
+      .partt{
+        margin-right: -110em;
+        margin-top: -13em;
+        padding-right: 10em;
+      }
+      #driving_license_number{
+        width: 49.3em;
+        margin-right: 10em;
+
+      }
+      #rental_start_date{
+        width: 49.3em;
+        margin-right: 10em;
+
+      }
+      #rental_end_date{
+        width: 49.3em;  
+        margin-right: 10em;
+        
+      }
+      .butBook{
+        width: 49.3em;  
+        margin-right: 10em;
+        
+      }
+       */
      
     
     
@@ -452,7 +533,7 @@
        
       }
       
-      .inputR:hover, .inputR:focus{
+      /* .inputR:hover, .inputR:focus{
         box-shadow: 0 0 1em #00000013;
       }
       .inputR:focus{
@@ -462,4 +543,26 @@
       .inputR::-webkit-input-placeholder {
           font-weight: 100;
           color: #ccc;
+        } */
+
+        form{
+            margin-left: 8em;
         }
+        .forRow{
+           width: 70em;
+           margin-top: 1em;
+        }
+        input{
+            margin-left: 3em;
+        }
+        label{
+            width: 12em;
+            color:black;
+        }
+        .butBook{
+            width: 49.3em;  
+            margin-left: 7em;
+            background-color: rgb(16 69 54);
+            border: none;      
+          }
+          
