@@ -446,7 +446,7 @@
       label{
         color: black;
       }
-      .search__input {
+      input {
         font-family: inherit;
         font-size: inherit;
         background-color: #f4f2f2;
@@ -553,16 +553,49 @@
            margin-top: 1em;
         }
         input{
-            margin-left: 3em;
-        }
+        margin-left: 3em;
+        font-family: inherit;
+        font-size: inherit;
+        height: 36px;
+        background-color: #f4f2f2;
+        border: none;
+        color: #646464;
+        padding: 0.7rem 1rem;
+        border-radius: 20px;
+        transition: all ease-in-out .5s;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+        input:hover, input:focus {
+            box-shadow: 0 0 1em #00000013;
+          }
+          
+          input:focus {
+            outline: none;
+            background-color: #f0eeee;
+          }
+          
+          input::-webkit-input-placeholder {
+            font-weight: 100;
+            color: #ccc;
+          }
+          
+          input:focus  {
+            background-color: #f0eeee;
+          }
         label{
             width: 12em;
             color:black;
         }
         .butBook{
             width: 49.3em;  
-            margin-left: 7em;
-            background-color: rgb(16 69 54);
+            margin-left: 10em;
+            background-color: #22b3c1;
             border: none;      
+          }
+          .butBook:hover{
+            opacity: 0.8;
           }
           
